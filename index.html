@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styl.css">
+        <link rel="stylesheet" type="text/css" href="css/all.css">
+        <script src="https://kit.fontawesome.com/e822fcf151.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="navigation">
+            <h1><i class="fas fa-spinner"></i> The Sparks Foundation</h1>
+             
+            <div class="subnav">
+                <ul id="uli">
+                    <li id="this">Home</li>
+                    <li id="hv"><a href="about.html">About</a></li>
+                    <li id="hv"><a href="Health Advisory.html">Health Advisory</a></li>
+                    <li id="hv"><a href="Contact Us.html">Contact Us</a></li>
+                 </ul>
+                <div id="login">
+                    <a  id="lg" href=""><i class="fas fa-user-circle"></i></a>
+                    <p id="tt">login/ragister</p>
+                </div>
+            </div>
+        </div> 
+         
+        <div class="slidebox">
+            <div class="slidewrape">
+                <div id="slide">
+                    <img src="aas1.jpg" alt="image1">
+                    <img src="mig2.jpg" alt="image1">
+                    <img src="aas2.jpg" alt="image1">
+                    <img src="aas1.jpg" alt="image1">
+                    <img src="mig2.jpg" alt="image1">
+                </div>
+                <div id="eff">
+                    <h3>The time to act is Now</h3>
+                    <p>Help India fight the second deadly wave of COVID.</p>
+                    <button onclick="window.location.href = 'https://rzp.io/i/Z64l5ST';">Donate</button>
+                </div>
+                <div class="indicator">
+                    <span id="btn1" class="bt"></span>
+                    <span id="btn2" class="bt"></span>
+                    <span id="btn3" class="bt"></span>
+                </div>
+            </div>
+        </div>
+        <script>
+            var s = document.getElementById("slide");
+            var btn1 = document.getElementById("btn1");
+            var btn2 = document.getElementById("btn2");
+            var btn3 = document.getElementById("btn3");
+            btn1.onclick = function(){
+                s.style.transform ="translateX(0px)";
+                btn1.classList.add("bt");
+                btn2.classList.remove("bt");
+                btn3.classList.remove("bt");
+            }
+            btn2.onclick = function(){
+                s.style.transform ="translateX(-100%)";
+                btn2.classList.add("bt");
+                btn1.classList.remove("bt");
+                btn3.classList.remove("bt");
+            }
+            btn3.onclick = function(){
+                s.style.transform ="translateX(-200%)";
+                btn3.classList.add("bt");
+                btn2.classList.remove("bt");
+                btn1.classList.remove("bt");
+            }
+        </script>
+        <h4>You can trust Us</h4>
+        <div class="middle">
+            <div id="midi">
+                <h5><i class="fas fa-check-square"></i>Assured</h5>
+                <p>We ensure that critical checks are done on all nonprofits and 
+                their projects to assure your donation does what it is supposed to - change lives.</p>
+            </div>
+            <div id="midii">
+                <div id="submidi">
+                    <h6>60.00lakh+</h6>
+                    <p>raised for nonprofits</p>
+                    <h6>10k+</h6>
+                    <p>lives impacted</p>
+                </div>
+                <div id="submidii">
+                    <h6>6k+</h6>
+                    <p>donors have contributed to causes</p>
+                    <h6>Trusted</h6>
+                    <p>by 40+ corporates and brands</p>
+                </div>
+            </div>
+        </div>
+        <div class="end">
+
+            <div id="endi">
+                <ul id="ul2">
+                    <li id="els">Help towards</li>
+                    <li id="el"><a href=""><i class="fas fa-stethoscope"></i> Medical</a></li>
+                    <li id="el"><a href=""><i class="fas fa-book-reader"></i> Education</a></li>
+                    <li id="el"><a href=""><i class="fas fa-paw"></i> Wildlife</a></li>
+                </ul>
+            </div>
+
+            <div id="endii">
+                <p id="els">Find us on</p>
+                <ul>
+                    <li><i class="fab fa-facebook-square"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-twitter-square"></i></li>
+                    <li><i class="fab fa-linkedin"></i></li>
+                    <li><i class="fab fa-youtube"></i></li>
+                </ul>
+            </div>
+
+            <div id="endiii">
+                <p id="els">About us</p>
+                <p id="last">This website is made for the internship project of "The Sparks Foundation", 
+                    all the thing present in this website are made for the practice purpose and are unreal.  </p>
+            </div>
+
+        </div>
+    </body>
+</html>
